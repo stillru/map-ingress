@@ -1,76 +1,113 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Map-ingress by stillru</title>
-  </head>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>map ingress</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="styles/8e84585f.main.css">
+        <script src="scripts/vendor/f7f27360.modernizr.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+<div id="canvas">
+            <div id="paper"></div>
+            <div id="nsw">
+                <h2>New South Wales</h2>
+                <p>
+                    New South Wales (abbreviated as NSW) is Australia’s oldest and most populous state, located in the south-east of the
+                    country, north of Victoria and south of Queensland. It was founded in 1788 and originally comprised much of the
+                    Australian mainland, as well as Lord Howe Island and Norfolk Island. New Zealand was not initially part of the colony,
+                    although when Britain annexed New Zealand in 1840 it was briefly a part of New South Wales. During the 19th century
+                    large areas were successively separated to form the British colonies of Tasmania, South Australia, Victoria,
+                    Queensland, and New Zealand.
+                </p>
+            </div>
+            <div id="vic">
+                <h2>Victoria</h2>
+                <p>
+                    Victoria is a state located in the south-eastern corner of Australia. It is the smallest mainland state in area but
+                    the most densely populated and urbanised. Prior to European settlement, some 30,000 Indigenous Australians lived in
+                    the area now occupied by the state. By contrast, over five million people now inhabit the region. European settlement
+                    in Victoria began in the 1830s as a farming community. Victoria is the second most populous Australian state, after New South Wales, with
+                    an estimated population of 5,205,200 as of June 2007. Melbourne is Victoria’s capital and largest city, with more
+                    than 70% of all Victorians living there.
+                </p>
+            </div>
+            <div id="wa">
+                <h2>Western Australia</h2>
+                <p>
+                    Western Australia is a state occupying the entire western third of the Australian continent. The nation’s largest
+                    state and the second largest sub-national entity in the world, it has 2.1 million inhabitants (10% of the national
+                    total), 85% of whom live in the south-west corner of the state. The people of Western Australia are often
+                    colloquially referred to as sand-gropers, the common name of an insect found on sand dunes around Perth.
+                </p>
+            </div>
+            <div id="sa">
+                <h2>South Australia</h2>
+                <p>
+                    South Australia is a state of Australia in the southern central part of the country. It covers some of the most arid
+                    parts of the continent; with a total land area of 983,482 square kilometres, it is the fourth largest
+                    of Australia’s six states and two territories. It is bordered to the west by Western Australia, to the north by the
+                    Northern Territory and Queensland, to the east by Queensland, New South Wales and Victoria, and along the south by
+                    the Great Australian Bight and the Southern Ocean. With nearly 1.6 million people, the state comprises less than
+                    10% of the Australian population and ranks fifth in population among the states and territories.
+                </p>
+            </div>
+            <div id="nt">
+                <h2>Northern Territory</h2>
+                <p>
+                    The Northern Territory is a federal territory of Australia, occupying much of the center of the mainland continent,
+                    as well as the central northern regions. It shares borders with Western Australia to the west, South Australia to the
+                    south, and Queensland to the east. To the north, the territory is bordered by the Timor Sea, the Arafura Sea and the
+                    Gulf of Carpentaria. Despite its large area — over 1,349,129 square kilometres, making it the third
+                    largest Australian federal division — it is sparsely populated. With a population of 218,380 it is the least populous
+                    division in the country.
+                </p>
+            </div>
+            <div id="qld">
+                <h2>Queensland</h2>
+                <p>
+                    Queensland is a state of Australia, occupying the north-eastern corner of the mainland continent. It is bordered by
+                    the Northern Territory to the west, South Australia to the south-west and New South Wales to the south. To the east,
+                    Queensland is bordered by the Coral Sea and Pacific Ocean. The state is Australia’s second largest by area, following
+                    Western Australia, and the country's third most populous after New South Wales and Victoria.
+                </p>
+            </div>
+            <div id="tas">
+                <h2>Tasmania</h2>
+                <p>
+                    Tasmania is an Australian island and state of the same name. It is located 240 kilometres south of the
+                    eastern side of the continent, being separated from it by Bass Strait. The state of Tasmania includes the island of
+                    Tasmania and other surrounding islands. Tasmania has an estimated population of 494,520 (March 2008) and an area
+                    of 68,401 square kilometres.
+                    Tasmania is promoted as the Natural State and the "Island of Inspiration" owing to its large and relatively
+                    unspoiled natural environment. The island is 364 kilometres long from the northernmost point to the southernmost point and 306
+                    kilometres from west to east.
+                </p>
+            </div>
+        </div>
+        <p id="copy">Demo of <a href="http://raphaeljs.com/">Raphaël</a>—JavaScript Vector Library</p>
 
-  <body>
-    <div id="container">
-      <div class="inner">
+        <script src="scripts/1137e1f5.vendor.js"></script>
 
-        <header>
-          <h1>Map-ingress</h1>
-          <h2></h2>
-        </header>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/stillru/map-ingress/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/stillru/map-ingress/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/stillru/map-ingress" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <hr>
-
-        <section id="main_content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <footer>
-          Map-ingress is maintained by <a href="https://github.com/stillru">stillru</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
-      </div>
-    </div>
-  </body>
+        <script data-main="scripts/672703b5.main" src="bower_components/raphael/raphael.js"></script>
+</body>
 </html>
