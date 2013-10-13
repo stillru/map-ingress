@@ -1,6 +1,7 @@
 {
   "name": "map-ingress",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "repositary": "git@github.com:stillru/map-ingress.git",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
