@@ -1,0 +1,181 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>map ingress</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/raphael.js -->
+        <script src="bower_components/raphael/raphael.js"></script>
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!-- Nav Bar -->
+
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="nav-bar right">
+       </div>
+      <h1>IMLE</h1>
+      <small>Interactive map of local excellence </small>
+      <hr />
+    </div>
+  </div>
+
+  <!-- End Nav -->
+
+
+  <!-- Main Page Content and Sidebar -->
+
+  <div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns" role="content">
+
+    <article>
+    <div class="row">  
+        <div class="large-6 columns center">
+            <div id="canvas">
+                <div id="paper"></div>
+            </div>
+        </div>
+        <div class="large-6 columns">
+        <div id="nsw">
+                <h5>Южный Админисративный Округ</h5>
+                <p>
+                    ЮАО - Основное место обитание одного из самых активных игроков Ingress - Volk. Так же этот округ является родным для игроков HateMoss, gsoft, keen91, stillru и других...
+                </p>
+        </div>
+        <div id="cao">
+                <h5>Центральный Административный Округ</h5>
+                <p>
+                    Основная масса порталов сосредоточена именно здесь.
+                </p>
+        </div>
+        <div id="uzao">
+                <h5>Юго-Западный Административный Округ</h5>
+                <p>
+                    Тут какойто текст</p>
+        </div>          
+        <div id="vic">
+                <h5>Северо-Восточный Административный Округ</h5>
+                <p>
+                    СВАО знаменит своими шашлыками и vikichaplin.
+                </p>
+        </div>
+        <div id="sao">
+                <h5>Северный Административный Округ</h5>
+                <p>
+                    Колыбель Резиста.
+                </p>
+        </div>
+        <div id="sa">
+                <h5>Северный Административный Округ</h5>
+                <p>
+                    В этом округе сильны резисты. Примечателен наличием ферм у савёловского рынка
+                </p>
+        </div>
+        <div id="nt">
+                <h5>Северо-Западный Административный Округ</h5>
+                <p>
+                    Включает в себя город Химки. Место обитания OldLoyd и работы kshul.
+                </p>
+        </div>
+        <div id="qld">
+                <h5>Восточный Административный Округ</h5>
+                <p>
+                    ВАО - довольно активный округ. Много высоко-уровневых игроков.
+                </p>
+        </div>
+        <div id="tas">
+                <h5>Западный Административный Округ</h5>
+                <p>Западный административный округ обладает большим количеством удалённых от магистралей порталов.
+                </p>
+        </div>
+        </div>          
+    </article>
+
+    </div>
+
+    <!-- End Main Content -->
+
+
+    <!-- Sidebar -->
+
+    <aside class="large-3 columns hide-for-small">
+
+    <h5>Ссылки</h5>
+    <ul class="side-nav">
+        <li><a href="http://ingress.com">Ingress</a></li>
+        <li><a href="http://ingress.com/intel">Map</a></li>
+        <li><a href="http://ingress.su">Russian Wiki</a></li>
+    </ul>
+
+      <div class="panel">
+        <h5>О проекте</h5>
+        <p>Этот проект размещён на <a href="https://github.com/stillru/map-ingress">GitHub</a></p>
+      </div>
+
+    </aside>
+
+    <!-- End Sidebar -->
+  </div>
+
+  <!-- End Main Content and Sidebar -->
+
+
+  <!-- Footer -->
+
+  <footer class="row hide-for-small">
+    <div class="large-12 columns">
+      <hr />
+      <div class="row">
+        <div class="large-6 columns">
+          <p>&copy; Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="http://www.ingress.com">INGRESS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="bower_components/jquery/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/main.js -->
+        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
