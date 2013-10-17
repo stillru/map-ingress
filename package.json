@@ -1,6 +1,6 @@
 {
   "name": "map-ingress",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repositary": "git@github.com:stillru/map-ingress.git",
   "dependencies": {},
   "devDependencies": {
@@ -26,7 +26,8 @@
     "grunt-svgmin": "~0.2.0",
     "grunt-concurrent": "~0.3.0",
     "load-grunt-tasks": "~0.1.0",
-    "time-grunt": "~0.1.1"
+    "time-grunt": "~0.1.1",
+    "tabletop": "~1.3.2"
   },
   "engines": {
     "node": ">=0.8.0"
