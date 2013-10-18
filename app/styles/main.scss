@@ -22,7 +22,7 @@ h5,h2 {
 #paper {
 }
 
-#vao, #uzao, #cao, #szao, #sao, #uzao, #zao, #uao {
+#cao, #sao, #szao, #zao, #szao, #zao, #uzao, #uao, #uvao, #vao, #svao {
     display: none;
     overflow: auto;
     position: absolute;
@@ -32,4 +32,11 @@ h5,h2 {
 
 h2 {
     text-align: center;
+}
+
+p.copy {
+    bottom: 0;
+    font:12px/30px Georgia,serif;
+    right: 1em;
+    fint-size: 6
 }
