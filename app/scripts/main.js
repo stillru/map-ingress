@@ -1,7 +1,4 @@
-
-<!-- revision #17 -->
-
-require.config({
+﻿require.config({
     paths: {
         jquery: '../bower_components/jquery/jquery',
         bootstrapAffix: '../bower_components/sass-bootstrap/js/affix',
