@@ -7,4 +7,4 @@ Second goal - create vector maps for other regions
 
 Alpha 0.1.0
 
-## ToDo
+Just for fun
